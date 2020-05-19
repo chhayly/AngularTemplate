@@ -1,8 +1,8 @@
 <div id="mySidenav" class="sidenav" [ngClass]="{'navcollapsed':isExpanded ,'navexpanded':!isExpanded}">
-    <div class="d-flex mt-3" [ngClass]="{'d-none': !isExpanded }">  
+    <div class="d-flex" [ngClass]="{'d-none': !isExpanded }">  
       <button
       [ngClass]="{'d-none': !isExpanded }"
-      class="mx-auto"
+      class="mx-auto togglebtn"
       id="btnmenu"
       type="button"
       (click)="toggle()">
@@ -13,14 +13,14 @@
 
     </div>
     <div class="" [ngClass]="{'d-none':isExpanded }">
-        <a href="javascript:void(0)" class="closebtn" (click)="toggle()">      
+        <a href="javascript:void(0)" class="togglebtn" (click)="toggle()">      
           <fa-icon
           [icon]="faChevronLeft">
         </fa-icon></a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#" [routerLink]="['/']">Home</a>
+        <a href="#" [routerLink]="['/fetch-data']">Fetch Data</a>
+        <a href="#">Menu 3</a>
+        <a href="#">Menu 4</a>
     </div>
   </div>
   

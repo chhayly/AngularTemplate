@@ -1,33 +1,36 @@
 .sidenav {
-  float: left;
-  margin-right: 50px;
+  background-color:rgb(7, 71, 166);
+  /* overflow-x: hidden; */
+  transition: 0.5s;
+  left: 0;
+  }
+
+  .sidenav {
+    float: left;
+    margin-right: 20px;
     height: 100vh;
     width: 50px;
     position: inherit;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:rgb(7, 71, 166);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
+    }
 
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+  
+    color: #818181;
   }
   
-  .sidenav .closebtn {
+  .sidenav .togglebtn {
     float: right;
-    margin-right: 25px;
+    margin-right: 10px;
+    font-size: 20px;
   }
   
   @media screen and (max-height: 450px) {
@@ -53,13 +56,11 @@
     width: 100% !important ;
     height: 50px !important ;
     position: inherit;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:rgb(7, 71, 166);
-    overflow-x: hidden;
-    transition: 0.5s;
+    float: none;
+    margin-right: 0px;
   }
+
+
   .navcollapsed
   {
     height: 50px !important;
