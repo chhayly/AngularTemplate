@@ -10,13 +10,13 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
-import { BodyComponent} from './layout/body/body.component';
-import { HeaderComponent} from './layout/header/header.component';
-import { HeaderMenuComponent} from './layout/header-menu/header-menu.component';
-import { NavLeftComponent} from './layout/nav-left/nva-left.component';
-import { NavRightComponent} from './layout/nav-right/nav-right.component';
-import { FooterComponent} from './layout/footer/footer.component';
-import { NavSideMenuComponent} from './layout/navside-menu/navside-menu.component';
+import { BodyComponent} from './components/body/body.component';
+import { HeaderComponent} from './components/header/header.component';
+import { HeaderMenuComponent} from './components/header-menu/header-menu.component';
+import { NavLeftComponent} from './components/nav-left/nva-left.component';
+import { NavRightComponent} from './components/nav-right/nav-right.component';
+import { FooterComponent} from './components/footer/footer.component';
+import { NavSideMenuComponent} from './components/navside-menu/navside-menu.component';
 
 @NgModule({
   declarations: [
