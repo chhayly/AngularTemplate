@@ -7,8 +7,8 @@ import { faBars,faChevronLeft } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./navside-menu.component.css']
 })
 export class NavSideMenuComponent implements OnInit {
-
-
+  isExpanded = true;
+ 
   faBars = faBars;
   faChevronLeft= faChevronLeft;
 
@@ -16,10 +16,7 @@ export class NavSideMenuComponent implements OnInit {
     {
       
     }
-
-
-  isExpanded = true;
-
+    
   toggle() {
     this.isExpanded = !this.isExpanded;
   }
