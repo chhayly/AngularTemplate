@@ -1,4 +1,7 @@
 
+
+
+
 .sidenav {
     height: 100%;
     width: 50px;
@@ -6,12 +9,11 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color:rgb(7, 71, 166);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
   }
-  
+
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -29,7 +31,6 @@
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
     margin-left: 50px;
   }
   
@@ -38,11 +39,55 @@
     .sidenav a {font-size: 18px;}
   }
 
+  #btnmenu
+  {
+   background-color:transparent; 
+   border: none;
+   margin-right: auto;
+   margin-left: auto;
+  }
+  fa-icon
+  {
+   color:white; 
+  }
+
+  @media screen and (max-width:500px)
+{
+  .sidenav {
+    width: 100% !important ;
+    height: 50px !important ;
+    position: inherit;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgb(7, 71, 166);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .navcollapsed
+  {
+    height: 50px !important;
+  }
+  .navexpanded
+  {
+    height: 250px !important;
+  }
+
+  #btnmenu
+  {
+   background-color:transparent; 
+   border: none;
+   margin-right: 10px !important;
+   margin-left: auto;
+  }
+
+}
+
 .navcollapsed
 {
-display: block;
+  width: 50px;
 }
-.navexplanded
+.navexpanded
 {
-display: none;
+  width: 250px;
 }

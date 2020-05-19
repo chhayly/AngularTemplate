@@ -1,20 +1,26 @@
-<div id="mySidenav" class="sidenav">
-    <div class="navcollapsed">
-        <button
-        class="navbar-toggler"
-        type="button"
-        (click)="toggle()"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<div id="mySidenav" class="sidenav" [ngClass]="{'navcollapsed':isExpanded ,'navexpanded':!isExpanded}">
+    <div class="d-flex mt-3" [ngClass]="{'d-none': !isExpanded }">  
+      <button
+      [ngClass]="{'d-none': !isExpanded }"
+      class="mx-auto"
+      id="btnmenu"
+      type="button"
+      (click)="toggle()">
+      <fa-icon
+      [icon]="faBars">
+    </fa-icon>
+  </button>
 
     </div>
-    <div class="navexplanded">
-        <a href="javascript:void(0)" class="closebtn" (click)="toggle()">&times;</a>
+    <div class="" [ngClass]="{'d-none':isExpanded }">
+        <a href="javascript:void(0)" class="closebtn" (click)="toggle()">      
+          <fa-icon
+          [icon]="faChevronLeft">
+        </fa-icon></a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
         <a href="#">Contact</a>
     </div>
   </div>
-
+  

@@ -17,6 +17,9 @@ import { NavLeftComponent} from './components/nav-left/nva-left.component';
 import { NavRightComponent} from './components/nav-right/nav-right.component';
 import { FooterComponent} from './components/footer/footer.component';
 import { NavSideMenuComponent} from './components/navside-menu/navside-menu.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
 
 @NgModule({
   declarations: [
@@ -41,7 +44,8 @@ import { NavSideMenuComponent} from './components/navside-menu/navside-menu.comp
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-    ])
+    ]),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
